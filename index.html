@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EGI TEGUH NUGRAHA | Web Developer</title>
+  <meta name="description" content="Portofolio Egi Teguh Nugraha - Lulusan Sistem Informasi dan Web Developer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Ikon (Instagram, LinkedIn, GitHub) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">EGI TEGUH NUGRAHA</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      <nav id="navMenu">
+        <a href="#tentang">Tentang</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="label">LULUSAN SISTEM INFORMASI | WEB DEVELOPER</p>
+        <h1>Egi Teguh Nugraha</h1>
+        <p class="hero-desc">
+          Saya merupakan lulusan Sistem Informasi yang memiliki minat dalam
+          pengembangan website, aplikasi, dan solusi digital yang praktis.
+        </p>
+        <p class="hero-meta">Web Developer · Indonesia</p>
+        <div class="hero-buttons">
+          <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#kontak" class="btn btn-outline">Hubungi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TENTANG ===== -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <p class="section-label">01 — TENTANG</p>
+        <h2>Tentang Saya</h2>
+
+        <div class="about-grid">
+          <div class="photo-wrap">
+            <!-- FOTO: simpan di folder images/ dengan nama foto.jpeg -->
+            <img src="images/gambar-1.jpeg" alt="Egi Teguh Nugraha" class="photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder">Foto</div>
+          </div>
+
+          <div class="about-text">
+            <p>
+              Lulusan Sistem Informasi yang berfokus pada pengembangan web dan solusi digital yang praktis.
+              Terbiasa menerjemahkan kebutuhan pengguna menjadi aplikasi yang terstruktur dan mudah digunakan, dengan ketelitian dalam pengelolaan data dan dokumentasi.
+              Terbuka untuk berkontribusi pada proyek yang bermanfaat dan terus berkembang sebagai developer.
+            </p>
+            <p>
+              Saat ini saya fokus memperdalam bagaimana menjadi sebuah web developer serta menjadi seorang IT Consultant
+              dan sedang membuka diri untuk peluang sebagai seorang System Analyst, baik penuh waktu, magang, maupun proyek freelance.
+              Saya hobi otomotif khususnya pada bagian mobil yang dimana saya suka untuk mereview mobil dengan cara melihat spesifikasi mobil tersebut
+              dan saya juga suka untuk mengulas mobil tersebut dengan cara membandingkan mobil tersebut dengan mobil lain yang sejenis.
+            </p>
+
+            <h3>Keahlian</h3>
+            <ul class="skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>PHP / Laravel</li>
+              <li>MySQL</li>
+              <li>Git &amp; GitHub</li>
+              <li>UI/UX Dasar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYEK ===== -->
+    <section class="section" id="proyek">
+      <div class="container">
+        <p class="section-label">02 — PROYEK</p>
+        <h2>Proyek Pilihan</h2>
+        <p class="section-desc">Klik kartu untuk melihat detail lengkap proyek dan screenshot-nya.</p>
+
+        <div class="projects-grid">
+
+          <!-- ========== PROYEK 1 (salin blok <article> ini untuk menambah proyek) ========== -->
+          <article class="project-card" tabindex="0" role="button" aria-label="Lihat detail Rekomendasi Kuliner Terbaik Di Kecamatan Pinang Kota Tangerang">
+
+            <!-- Bagian yang tampil di kartu -->
+            <div class="project-thumb">
+              <!-- Screenshot utama: simpan di images/skripsi-1.png -->
+              <img src="images/gambar-2.png" alt="Screenshot aplikasi Rekomendasi Kuliner Terbaik Di Kecamatan Pinang" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-info">
+              <p class="project-type">PROYEK SKRIPSI · APLIKASI BERBASIS WEB</p>
+              <h3>Rekomendasi Kuliner Terbaik Di Kecamatan Pinang Kota Tangerang</h3>
+              <p class="project-summary">
+                Website ini dibangun untuk sebuah proyek skripsi yang bertujuan memberikan rekomendasi kuliner terbaik di Kecamatan Pinang, Kota Tangerang.
+              </p>
+              <span class="project-more">Lihat detail <span>→</span></span>
+            </div>
+
+            <!-- Bagian yang tampil di popup setelah kartu diklik (disembunyikan di halaman) -->
+            <div class="project-detail" hidden>
+              <p class="project-type">PROYEK SKRIPSI · APLIKASI BERBASIS WEB</p>
+              <h3>Rekomendasi Kuliner Terbaik Di Kecamatan Pinang Kota Tangerang</h3>
+
+              <div class="gallery">
+                <!-- Tambah/hapus <figure> sesuai jumlah screenshot -->
+                <figure><img src="images/gambar-2.png" alt="Tampilan beranda aplikasi rekomendasi kuliner" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-3.png" alt="Tampilan halaman rekomendasi kuliner" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-4.png" alt="Tampilan halaman rekomendasi kuliner" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-5.jpg" alt="Tampilan halaman lokasi tempat kuliner" loading="lazy" onerror="this.style.display='none'" /></figure>
+              </div>
+
+              <h4>Deskripsi</h4>
+              <p>
+                Website ini dibangun untuk sebuah proyek skripsi yang bertujuan memberikan rekomendasi kuliner terbaik di Kecamatan Pinang, Kota Tangerang. Dengan menggunakan metode Content Based Filtering yang digunakan untuk memberikan
+                sebuah rekomendasi berdasarkan data tempat makan yang sudah dikumpulkan dan untuk memberikan sebuah rekomendasi yang menggunakan Artificial Intelligence dibantu dengan menggunakan metode Cosine Similarity yang fungsinya untuk
+                menghitung tingkat kemiripan antara data tempat makanannya.
+              </p>
+
+              <h4>Fitur Utama</h4>
+              <ul class="features">
+                <li>Dapat memberikan rekomendasi kuliner terbaik sesuai dengan user inginkan</li>
+                <li>Terdapat fitur detail informasi yang menyajikan informasi-informasi terkait kuliner seperti rating, kisaran harga, dan jam operasional</li>
+                <li>Terdapat halaman lokasi yang menampilkan posisi letak tempat kuliner yang ingin dituju serta langsung terintegrasi ke dalam aplikasi Google Maps</li>
+              </ul>
+
+              <h4>Teknologi</h4>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Library NLTK</li>
+                <li>Pytorch</li>
+                <li>JSON</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- ========== PROYEK 2 ========== -->
+          <article class="project-card" tabindex="0" role="button" aria-label="Lihat detail Sistem Informasi Manajemen Servis Kendaraan">
+
+            <div class="project-thumb">
+              <img src="images/gambar-6.jpg" alt="Screenshot halaman dashboard Sistem Informasi Manajemen Servis Kendaraan" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-info">
+              <p class="project-type">PROYEK FREELANCE · APLIKASI BERBASIS WEB</p>
+              <h3>Sistem Informasi Manajemen Servis Kendaraan</h3>
+              <p class="project-summary">
+                Website ini dibuat untuk membantu pendataan servis kendaraan pada motor di bengkel Kembar Mustika Motor.
+              </p>
+              <span class="project-more">Lihat detail <span>→</span></span>
+            </div>
+
+            <div class="project-detail" hidden>
+              <p class="project-type">PROYEK FREELANCE · APLIKASI BERBASIS WEB</p>
+              <h3>Sistem Informasi Manajemen Servis Kendaraan</h3>
+
+              <div class="gallery">
+                <figure><img src="images/gambar-6.jpg" alt="Tampilan halaman dashboard bengkel" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-7.jpg" alt="Tampilan halaman jenis kendaraan" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-8.jpg" alt="Tampilan halaman detail servis" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-9.jpg" alt="Tampilan halaman kendaraan" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-10.jpg" alt="Tampilan halaman servis" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-11.jpg" alt="Tampilan halaman pemilik kendaraan" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-12.jpg" alt="Tampilan halaman jenis servis" loading="lazy" onerror="this.style.display='none'" /></figure>
+              </div>
+
+              <h4>Deskripsi</h4>
+              <p>
+                Website ini dibangun untuk membantu pendataan pada kendaraan bermotor di bengkel Kembar Mustika Motor.
+                Proyek ini dibuat juga khususnya atas permintaan dari owner bengkel tersebut untuk membuat sebuah website sederhana yang membantu dia
+                untuk bisa melihat data kendaraan yang sedang diservis, total jumlah kendaraan yang sudah servis di bengkel tersebut serta melihat bahan
+                atau sparepart yang telah digunakan dari segi nama, jenis, dan harga biaya yang sudah diservis tersebut.
+              </p>
+
+              <h4>Fitur Utama</h4>
+              <ul class="features">
+                <li>Terdapat dashboard yang menampilkan informasi utama tentang kendaraan yang sedang diservis</li>
+                <li>Memiliki halaman jenis kendaraan untuk memasukkan apa saja yang sudah diservis pada kendaraan tersebut</li>
+                <li>Terdapat halaman detail servis untuk melihat informasi lebih lanjut tentang setiap servis yang dilakukan</li>
+                <li>Terdapat halaman kendaraan yang berfungsi untuk melihat informasi tentang setiap kendaraan</li>
+                <li>Halaman servis juga tak lupa disediakan untuk input kendaraan tanggal masuk dan keluar</li>
+                <li>Halaman pemilik juga disediakan untuk melihat informasi tentang pemilik kendaraan</li>
+                <li>Terakhir, disediakan halaman jenis servis yang berfungsi untuk memasukkan jenis-jenis servis yang sudah dilakukan</li>
+              </ul>
+
+              <h4>Teknologi</h4>
+              <ul class="tags">
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>PhpMyAdmin</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>Laragon</li>
+                <li>CSS</li>
+                <li>HTML</li>
+              </ul>
+
+              <!-- Tombol Demo/GitHub dinonaktifkan karena link belum ada.
+                   Hapus tanda komentar dan isi link-nya jika sudah siap:
+              <div class="detail-links">
+                <a href="LINK-DEMO" target="_blank" rel="noopener" class="btn btn-primary">Lihat Demo</a>
+                <a href="LINK-GITHUB" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+              </div>
+              -->
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PENGALAMAN ===== -->
+    <section class="section" id="pengalaman">
+      <div class="container">
+        <p class="section-label">03 — PENGALAMAN</p>
+        <h2>Pengalaman</h2>
+        <p class="section-desc">Klik kartu untuk melihat rincian tanggung jawab dan dokumentasinya.</p>
+
+        <!-- Satu pengalaman = satu kartu. Untuk menambah, salin blok <article> ini
+             lalu tempel di bawahnya (di dalam div yang sama). -->
+        <div class="projects-grid projects-grid--single">
+
+          <article class="project-card" tabindex="0" role="button" aria-label="Lihat detail pengalaman sebagai Posisi Kamu">
+
+            <!-- Bagian yang tampil di kartu -->
+            <div class="project-thumb">
+              <!-- GANTI src di bawah dengan alamat gambar pengalaman lu (sama seperti gambar proyek) -->
+              <img src="images/gambar-13.jpg" alt="Dokumentasi pengalaman kerja" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <div class="project-info">
+              <h3>Backend</h3>
+              <p class="project-meta">Maret 2025 – Juli 2025 · Work From Home</p>
+              <p class="project-company">PT.WinniCode Garuda Teknologi</p>
+              <span class="project-more">Lihat detail <span>→</span></span>
+            </div>
+
+            <!-- Bagian yang tampil di popup setelah kartu diklik (disembunyikan di halaman) -->
+            <div class="project-detail" hidden>
+              <p class="project-type">PENGALAMAN KERJA</p>
+              <h3>Backend</h3>
+              <p class="project-meta">Maret 2025 – Juli 2025 · Work From Home</p>
+              <p class="project-company">PT.WinniCode Garuda Teknologi</p>
+
+              <div class="gallery">
+                <!-- Tambah/hapus <figure> sesuai jumlah gambar dokumentasi -->
+                <figure><img src="images/gambar-13.jpg" alt="Dokumentasi pengalaman 1" loading="lazy" onerror="this.style.display='none'" /></figure>
+                <figure><img src="images/gambar-14.jpg" alt="Dokumentasi pengalaman 2" loading="lazy" onerror="this.style.display='none'" /></figure>
+              </div>
+
+              <h4>Deskripsi</h4>
+              <p>
+                Berkontribusi dalam pengembangan website melalui analisis sistem, perancangan antarmuka, dan pengembangan fitur dengan Laravel, PHP, dan MySQL. 
+                Menyusun dokumentasi serta merancang tampilan antarmuka menggunakan sebuah aplikasi Figma dan Canva sebagai alat desain dan perancangan tampilan.
+              </p>
+
+              <h4>Tanggung Jawab</h4>
+              <ul class="features">
+                <li>Mencari referensi dan sumber daya terkait pengembangan website</li>
+                <li>Memulai pengembangan website</li>
+                <li>Menyusun dokumentasi pengembangan</li>
+              </ul>
+
+              <h4>Tools &amp; Keahlian</h4>
+              <ul class="tags">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ===== PENDIDIKAN (satu entri; salin blok timeline-item untuk menambah) ===== -->
+        <h3 class="subsection-title">Pendidikan</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="date">2022 — 2026</span>
+            <h3>S1 Sistem Informasi (3,58)</h3>
+            <p class="place">Universitas Gunadarma</p>
+            <p>Skripsi: PENGEMBANGAN SISTEM REKOMENDASI KULINER BERBASIS CHATBOT PADA WEBSITE 
+                        MENGGUNAKAN METODE CONTENT-BASED FILTERING DI KECAMATAN PINANG 
+                        KOTA TANGERANG</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section class="section" id="kontak">
+      <div class="container">
+        <p class="section-label">04 — KONTAK</p>
+        <h2>Mari Terhubung</h2>
+        <p class="contact-desc">
+          Tertarik bekerja sama atau sekadar ingin menyapa? Silakan hubungi saya lewat:
+        </p>
+
+        <div class="contact-links">
+          <a href="https://www.instagram.com/fabulous_egiteguh" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
+          <a href="https://www.linkedin.com/in/egi-nugraha-017947237/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+          <a href="https://github.com/FabulousDesigner" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Egi Teguh Nugraha.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
